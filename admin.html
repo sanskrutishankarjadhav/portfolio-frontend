@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Admin Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="admin-header">
+        <h1>Portfolio Admin Dashboard</h1>
+        <p>Manage your portfolio projects</p>
+    </header>
+
+    <!-- ================= FORM ================= -->
+
+    <section class="admin-section">
+
+        <div class="form-card">
+
+            <h2 id="formHeading">Add New Project</h2>
+
+            <form id="adminProjectForm" class="admin-form">
+
+                <!-- hidden project id while editing -->
+                <input type="hidden" id="projectId">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Project Title"
+                    required>
+
+                <textarea
+                    id="description"
+                    placeholder="Project Description"
+                    required></textarea>
+
+                <input
+                    type="text"
+                    id="technologies"
+                    placeholder="Technologies (comma separated)"
+                    required>
+
+                <input
+                    type="url"
+                    id="githubLink"
+                    placeholder="GitHub Link">
+
+                <input
+                    type="url"
+                    id="liveLink"
+                    placeholder="Live Demo Link">
+
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="Project Image URL">
+
+                <input
+                    type="text"
+                    id="category"
+                    placeholder="Category (Frontend, AEM, Full Stack...)">
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="featured">
+
+                    Featured Project
+
+                </label>
+
+                <button type="submit" id="submitBtn">
+
+                    <i class='bx bx-plus'></i>
+
+                    Add Project
+
+                </button>
+
+                <button
+                    type="button"
+                    id="cancelEdit"
+                    class="cancel-btn">
+
+                    Cancel Edit
+
+                </button>
+
+            </form>
+
+            <p id="adminStatus"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECT LIST ================= -->
+
+    <section class="projects-section">
+
+        <h2>Existing Projects</h2>
+
+        <div id="adminProjectsContainer" class="projects-grid">
+
+            <!-- JS Loads Projects -->
+
+        </div>
+
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
