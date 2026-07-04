@@ -29,7 +29,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    overflow: hidden;
+   
 }
 
 .logo {
@@ -1357,4 +1357,368 @@ body {
     font-weight: 500;
     text-align: center;
 }
+.top{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+}
+.last-text{
+    padding:20px;
+    text-align:center;
+}
 /* ====== END CONTACT FORM STYLES ====== */
+
+
+/* ===========================
+   MOBILE NAVIGATION
+=========================== */
+
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .header{
+        padding:15px 20px;
+        overflow:visible;
+    }
+
+    .logo{
+        font-size:24px;
+        letter-spacing:2px;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:#fff;
+        font-size:32px;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    .navbar{
+
+        position:absolute;
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        display:none;
+
+        flex-direction:column;
+
+        background:#252525;
+
+        text-align:center;
+
+        padding:15px 0;
+
+        z-index:999;
+
+    }
+
+    .navbar.active{
+
+        display:flex !important;
+
+    }
+
+    .navbar a{
+
+        display:block;
+
+        width:100%;
+
+        margin:0;
+
+        padding:15px 0;
+
+        font-size:20px;
+
+        opacity:1 !important;
+
+        animation:none !important;
+
+    }
+
+}/* ==========================================
+   MOBILE - HOME SECTION
+========================================== */
+
+@media screen and (max-width:768px){
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px 40px;
+        gap: 30px;
+    }
+
+    .home-content{
+        max-width:100%;
+    }
+
+    .home-content h1{
+    font-size:36px;
+    line-height:1.2;
+    letter-spacing:1px;
+}
+
+    .home-content h3{
+        font-size:24px;
+    }
+
+    .home-content h4,
+    .home-content h4 span{
+        font-size:20px;
+        line-height:1.5;
+    }
+    .home-content h4{
+    margin-top:15px;
+    line-height:1.5;
+    }
+
+    .img{
+        position:static;
+        margin:0;
+        display:flex;
+        justify-content:center;
+        width:100%;
+    }
+
+    .responsive{
+        width:190px;
+        height:190px;
+        object-fit:cover;
+        border-radius:50%;
+    }
+
+    .home-sci{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    .home-sci a{
+        margin:0;
+    }
+
+    .abtbtn-box,
+    .btn-box{
+        display:inline-block;
+        margin-top:20px;
+        width: 220px;
+    }
+
+}
+/* ==========================
+   HAMBURGER MENU
+========================== */
+
+.menu-toggle{
+
+    display:none;
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+
+}
+
+@media screen and (max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+}
+/* ===========================
+   ABOUT SECTION - MOBILE
+=========================== */
+
+@media screen and (max-width:768px){
+
+.about{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:70px 20px;
+    gap:30px;
+}
+
+.about-img{
+    width:100%;
+}
+
+.abt-res{
+    width:240px;
+    max-width:90%;
+    height:auto;
+}
+
+.about-text{
+    width:100%;
+}
+
+.about-text h2{
+    font-size:34px;
+}
+
+.about-text p{
+    font-size:16px;
+    line-height:1.8;
+    text-align:center;
+}
+
+.abtbtn-box{
+    display:inline-block;
+    margin-top:20px;
+}
+
+}
+/* ===========================
+   SKILLS - MOBILE
+=========================== */
+
+@media screen and (max-width:768px){
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.skill-box{
+
+    padding:20px;
+
+}
+
+.skill-box img{
+
+    width:60px;
+
+}
+
+.subtitle{
+
+    font-size:35px;
+
+}
+
+}
+/* ===========================
+   PROJECTS - MOBILE
+=========================== */
+
+@media screen and (max-width:768px){
+
+.featured-projects-box{
+
+    padding:20px;
+
+}
+
+.project-card{
+
+    width:100%;
+
+}
+
+}
+/* ===========================
+   EXPERTISE - MOBILE
+=========================== */
+
+@media screen and (max-width:768px){
+
+.prj-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.prj-list div{
+
+    width:100%;
+
+}
+
+.sub-title{
+
+    font-size:34px;
+
+}
+
+}
+/* ===========================
+   CONTACT - MOBILE
+=========================== */
+
+@media screen and (max-width:768px){
+
+.contacts{
+
+    padding:50px 20px;
+     padding-top:80px;
+
+}
+
+.contact-form{
+
+    width:100%;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+}
+
+.contact-icons{
+
+    justify-content:center;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.contact-list{
+
+    text-align:center;
+
+}
+
+}
+.contact-list a{
+    color:white;
+    text-decoration:none;
+}
+
+.contact-list a:hover{
+    color:#0ef;
+}

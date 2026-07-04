@@ -268,3 +268,32 @@ window.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// ===== MOBILE MENU =====
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("myLinks");
+
+menuToggle.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+    if(navbar.classList.contains("active")){
+
+        menuToggle.innerHTML="✖";
+
+    }else{
+
+        menuToggle.innerHTML="☰";
+
+    }
+
+});
+document.querySelectorAll(".navbar a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+    });
+
+});
